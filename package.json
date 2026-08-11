@@ -1,0 +1,17 @@
+{
+  "name": "disaster-response-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "cd disaster-response-frontend && npm install && cd ../disaster-response-backend && npm install",
+    "dev": "concurrently \"npm run dev --prefix disaster-response-backend\" \"npm run dev --prefix disaster-response-frontend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^10.0.4"
+  }
+}
